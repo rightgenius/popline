@@ -1,8 +1,16 @@
-b{
-  font-weight: bold;
-}
-i{
-  font-style: italic;
+div[contenteditable] {
+  ol{
+    list-style:decimal inside none;
+  }
+  ul{
+    list-style:disc inside none;
+  }
+  b{
+    font-weight: bold;
+  }
+  i{
+    font-style: italic;
+  }
 }
 @mixin rounded-corners($radius) {
   -webkit-border-radius: $radius;
@@ -26,15 +34,15 @@ $font-size: 14px;
   height: 25px;
   line-height: 25px;
   @include rounded-corners(5px);
-  @include line-gradient(#858585 0%, #3E3E3E 50%, #303030 51%, #303030 100%);
+  @include line-gradient(#858585 0%, #3e3e3e 50%, #303030 51%, #303030 100%);
   opacity: 0.95;
-  border: 1px solid #3B3B3A;
+  border: 1px solid #3b3b3a;
   display: none;
   margin: 0;
   list-style: none;
   padding: 0px 5px;
-  font-family: Arial, Helvetica, "Hiragino Sans GB", sans-serif;
-  text-rendering: optimizeLegibility;
+  font-family: arial, helvetica, "hiragino sans gb", sans-serif;
+  text-rendering: optimizelegibility;
   li {
     color: white;
     font-size: $font-size;
@@ -51,7 +59,7 @@ $font-size: 14px;
     }
   }
   .hover {
-    @include line-gradient(#7096F8 0%, #3A6FF3 50%, #2B64F3 51%, #2B64F3 100%);
+    @include line-gradient(#7096f8 0%, #3a6ff3 50%, #2b64f3 51%, #2b64f3 100%);
   }
   .boxed {
     padding: 0;
