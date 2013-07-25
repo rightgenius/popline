@@ -11,6 +11,10 @@ div[contenteditable] {
   i{
     font-style: italic;
   }
+  blockquote{
+    border-left: 3px solid #D0E5F2;
+    padding: 0 0 0 10px;
+  }
 }
 @mixin rounded-corners($radius) {
   -webkit-border-radius: $radius;
